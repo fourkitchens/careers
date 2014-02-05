@@ -28,5 +28,5 @@
 ### Code exercises
 
 1. In whichever programming language you are comfortable with, create a routine that
-   replaces image sources from [this file](./exercises/base64/index.html) with base64
-   encoded [data URIs](https://developer.mozilla.org/en-US/docs/data_URIs).
+   creates a copy of [this file](./exercises/base64/index.html) where image sources
+   are replaced with base64 encoded [data URIs](https://developer.mozilla.org/en-US/docs/data_URIs).
