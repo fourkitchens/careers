@@ -2,9 +2,9 @@
 
 ### Prospect questions
 
-#### Back-end
+#### Backend
 
-**General back-end**
+**General backend**
 
 1. What is SQL injection?
 2. What is one technique for minimizing server assets (images, CSS, JavaScript, etc)?
@@ -13,7 +13,7 @@
 5. What is Varnish and what does it do?
 6. What are Apache and Nginx?
 
-**Drupal back-end**
+**Drupal backend**
 
 1. How does the database abstraction layer protect against SQL injection?
 2. What is one function that protects against cross-site scripting?
@@ -21,7 +21,7 @@
 4. What are Drupal hooks?
 5. How does Drupal use the .htaccess file to support clean urls?
 
-#### Front-end
+#### Frontend
 
 1. Why is asset minification important?
 
