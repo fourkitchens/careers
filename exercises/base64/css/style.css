@@ -1,0 +1,1728 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ * 3. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  /* Establish a vertical rhythm unit using $base-line-height. */
+  line-height: 1.5em;
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Set 1 unit of vertical rhythm on the top and bottom margin.
+ */
+p,
+pre {
+  margin: 1.5em 0;
+}
+
+blockquote {
+  /* Set 1 unit of vertical rhythm on the top and bottom margin. */
+  margin: 1.5em 40px;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+  font-size: 2em;
+  line-height: 1.5em;
+  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.17em;
+  line-height: 1.28205em;
+  margin-top: 1.28205em;
+  margin-bottom: 1.28205em;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.80723em;
+  margin-top: 1.80723em;
+  margin-bottom: 1.80723em;
+}
+
+h6 {
+  font-size: 0.67em;
+  line-height: 2.23881em;
+  margin-top: 2.23881em;
+  margin-bottom: 2.23881em;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Set 1 unit of vertical rhythm and a consistent indentation.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1.5em 0;
+  padding: 0 0 0 40px;
+}
+
+dl {
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border-color: #c0c0c0;
+  margin: 0 2px;
+  /* Apply borders and padding that keep the vertical rhythm. */
+  border-top-style: solid;
+  border-top-width: 0.0625em;
+  padding-top: 0.4625em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.0625em;
+  padding-bottom: 0.9125em;
+  border-left-style: solid;
+  border-left-width: 0.0625em;
+  padding-left: 0.875em;
+  border-right-style: solid;
+  border-right-width: 0.0625em;
+  padding-right: 0.875em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 4. Improve appearance and consistency with IE 6/7.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+html {
+  @include background-grid;
+}
+*/
+.our-process blockquote {
+  font-size: 1.4em;
+  padding-top: .5em;
+  line-height: 1.2;
+  margin: 0 0 2em 0;
+}
+.our-process blockquote:before {
+  content: "\201C";
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 0;
+  margin-right: .1em;
+  vertical-align: -.4em;
+}
+.our-process blockquote cite {
+  display: block;
+  margin-top: 1em;
+  font-size: .8em;
+}
+
+.team-member .avatar, .profile .details .avatar {
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+.team-member .avatar a, .profile .details .avatar a {
+  display: block;
+  border-radius: 50%;
+}
+.team-member .avatar a:hover, .profile .details .avatar a:hover {
+  cursor: pointer;
+}
+.team-member .avatar img, .profile .details .avatar img {
+  width: 100%;
+  margin-top: -10.74074%;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-top: 0;
+}
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 75%/1.5em;
+}
+
+a {
+  color: #0c62c2;
+  text-decoration: none;
+  transition: color 0.25s linear;
+}
+a:hover, a:focus {
+  color: #35aa4e;
+  cursor: pointer;
+}
+p a {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  list-style-position: inside;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Whitney A", "Whitney B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main h1, h2 {
+  clear: both;
+}
+
+h1 {
+  font-size: 3em;
+}
+h1.title {
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 2.25em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.3125em;
+  margin-bottom: 0.5em;
+}
+
+header[role="banner"],
+main[role="main"],
+footer[role="contentinfo"] {
+  clear: both;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+br.r {
+  display: none;
+}
+
+.icon-drupal, a.icon-drupal {
+  color: #0c76ab;
+}
+
+a.icon-drupal:hover {
+  color: #05344c;
+}
+
+.icon-facebook, a.icon-facebook {
+  color: #3b5998;
+}
+
+a.icon-facebook:hover {
+  color: #1e2e4f;
+}
+
+.icon-flickr, a.icon-flickr {
+  color: #0063dc;
+}
+
+a.icon-flickr:hover {
+  color: #003576;
+}
+
+.icon-github, a.icon-github {
+  color: #171515;
+}
+
+a.icon-github:hover {
+  color: #4c4646;
+}
+
+.icon-instagram, a.icon-instagram {
+  color: #3f729b;
+}
+
+a.icon-instagram:hover {
+  color: #78a4c8;
+}
+
+.icon-twitter, a.icon-twitter {
+  color: #00acee;
+}
+
+a.icon-twitter:hover {
+  color: #006288;
+}
+
+header[role="banner"] {
+  margin-bottom: 2em;
+  padding: 1em 0 0 5%;
+}
+header[role="banner"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header[role="banner"] #logo img {
+  max-width: 150px;
+}
+@media (min-width: 480px) {
+  header[role="banner"] {
+    margin-bottom: 4em;
+  }
+}
+@media (min-width: 560px) {
+  header[role="banner"] {
+    padding: 4em 0 0 5%;
+  }
+  header[role="banner"] #logo {
+    width: 23.80952%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  header[role="banner"] #logo img {
+    max-width: 100%;
+  }
+  header[role="banner"] nav {
+    width: 68.25397%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+nav {
+  font-family: "Whitney A", "Whitney B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.3125em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+nav li {
+  padding: 0.25em 0;
+}
+nav li a {
+  color: #35aa4e;
+}
+nav li a:hover {
+  color: #4180c7;
+}
+@media (min-width: 480px) {
+  nav {
+    font-size: 1.125em;
+    margin-bottom: 0;
+    padding-top: 1.5em;
+  }
+  nav li {
+    padding: 0;
+    line-height: 1.5em;
+  }
+}
+@media (min-width: 800px) {
+  nav {
+    font-size: 1.3125em;
+    text-align: left;
+  }
+}
+
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+@media (min-width: 560px) {
+  .js .nav-collapse {
+    position: relative;
+  }
+
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+.nav-toggle {
+  width: 50px;
+  height: 50px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url('/img/menu.png') transparent no-repeat 0 0;
+  position: relative;
+  z-index: 500;
+}
+
+@media (min-width: 560px) {
+  .nav-collapse.closed li {
+    display: inline;
+    margin-right: 1em;
+  }
+}
+footer[role="contentinfo"] {
+  margin: 4em 0;
+  text-align: center;
+  font-size: 1.125em;
+  font-weight: 600;
+}
+footer[role="contentinfo"] ul {
+  list-style: none;
+}
+footer[role="contentinfo"] ul li {
+  margin-bottom: 0.5em;
+}
+footer[role="contentinfo"] ul li a {
+  font-weight: 600;
+  font-family: "Whitney A", "Whitney B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (min-width: 560px) {
+  footer[role="contentinfo"] ul li {
+    display: inline;
+    margin-right: .5em;
+  }
+}
+
+.work section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section.case-studies {
+  margin-bottom: 2em;
+}
+section.case-studies h2 {
+  text-align: center;
+}
+section.case-studies .work-sample {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+section.case-studies .work-sample:nth-of-type(2n+1) {
+  width: 42.85714%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 6.34921%;
+  clear: none;
+  clear: both;
+}
+section.case-studies .work-sample:nth-of-type(2n) {
+  width: 42.85714%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 50.79365%;
+  clear: none;
+}
+section.case-studies .work-sample img {
+  margin-bottom: 0.5em;
+}
+section.case-studies .work-sample h3 {
+  font-size: 1.125em;
+}
+@media (min-width: 560px) {
+  section.case-studies .work-sample:nth-of-type(3n+1) {
+    width: 23.80952%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 6.34921%;
+    clear: none;
+    clear: both;
+  }
+  section.case-studies .work-sample:nth-of-type(3n+2) {
+    width: 23.80952%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 38.09524%;
+    clear: none;
+  }
+  section.case-studies .work-sample:nth-of-type(3n) {
+    width: 23.80952%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 69.84127%;
+    clear: none;
+  }
+}
+
+section.clients {
+  background: white url('/img/patterns/noise-multiply.png') repeat;
+  margin-bottom: 2em;
+  padding: 1em 0;
+}
+section.clients h2 {
+  text-align: center;
+}
+section.clients .client:nth-of-type(3n+1) {
+  width: 23.80952%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 6.34921%;
+  clear: none;
+  clear: both;
+}
+section.clients .client:nth-of-type(3n+2) {
+  width: 23.80952%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 38.09524%;
+  clear: none;
+}
+section.clients .client:nth-of-type(3n) {
+  width: 23.80952%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 69.84127%;
+  clear: none;
+}
+@media (min-width: 560px) {
+  section.clients .client:nth-of-type(4n+1) {
+    width: 17.46032%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 12.69841%;
+    clear: none;
+    clear: both;
+  }
+  section.clients .client:nth-of-type(4n+2) {
+    width: 17.46032%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 31.74603%;
+    clear: none;
+  }
+  section.clients .client:nth-of-type(4n+3) {
+    width: 17.46032%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 50.79365%;
+    clear: none;
+  }
+  section.clients .client:nth-of-type(4n) {
+    width: 17.46032%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 69.84127%;
+    clear: none;
+  }
+}
+
+div.ready {
+  text-align: center;
+  margin-bottom: 4em;
+}
+div.ready p.cta {
+  display: inline;
+}
+div.ready form {
+  display: inline;
+}
+div.ready form input {
+  display: inline;
+  border: 0;
+  padding: .5em;
+  background: #36f;
+  color: #fff;
+}
+
+.products:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.products h2 {
+  text-align: center;
+}
+.products .product {
+  text-align: center;
+  padding: 1em .5em 1.5em .5em;
+}
+.products .product a {
+  padding: .5em .7em;
+  color: white;
+}
+.products .product.pressflow {
+  background-color: #2090b4;
+}
+.products .product.pressflow a {
+  background-color: #114b5d;
+}
+.products .product.pressflow a:hover {
+  background-color: #2db0da;
+}
+.products .product.training-wheels {
+  background-color: #e5da55;
+}
+.products .product.training-wheels a {
+  background-color: #b8ac1c;
+}
+.products .product.training-wheels a:hover {
+  background-color: #8c8315;
+}
+.products .product.scrummy {
+  background-color: #2b8045;
+}
+.products .product.scrummy a {
+  background-color: #11341c;
+}
+.products .product.scrummy a:hover {
+  background-color: #38a65a;
+}
+@media (min-width: 560px) {
+  .products .product {
+    min-height: 196px;
+    margin-bottom: 1em;
+  }
+  .products .product:nth-of-type(2n+1) {
+    width: 36.50794%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 12.69841%;
+    clear: none;
+    clear: both;
+  }
+  .products .product:nth-of-type(2n) {
+    width: 36.50794%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 57.14286%;
+    clear: none;
+  }
+}
+@media (min-width: 740px) {
+  .products .product:nth-of-type(3n+1) {
+    width: 23.80952%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 12.69841%;
+    clear: none;
+  }
+  .products .product:nth-of-type(3n+2) {
+    width: 23.80952%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 38.09524%;
+    clear: none;
+  }
+  .products .product:nth-of-type(3n) {
+    width: 23.80952%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 63.49206%;
+    clear: none;
+  }
+}
+
+.case-study {
+  width: 90%;
+  margin: 0 auto;
+}
+.case-study h1, .case-study h2.summary {
+  text-align: center;
+}
+.case-study h1 {
+  font-size: 2.25em;
+  margin-bottom: 0.5em;
+}
+.case-study h2.summary {
+  font-family: "Sentinel A", "Sentinel B", Georgia, serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #414141;
+  line-height: 1.3;
+}
+.case-study img.offset {
+  max-width: 150px;
+}
+@media (min-width: 560px) {
+  .case-study img.offset {
+    max-width: none;
+  }
+}
+@media (min-width: 768px) {
+  .case-study img.offset {
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 768px) {
+  .case-study img.offset.left {
+    float: left;
+    margin-left: -16em;
+  }
+}
+.case-study img.offset.right {
+  float: right;
+  margin-left: 1em;
+}
+@media (min-width: 768px) {
+  .case-study img.offset.right {
+    margin-right: -8em;
+  }
+}
+.case-study .hero {
+  margin: 1em auto 2em auto;
+}
+.case-study .content {
+  margin: 0 auto;
+}
+.case-study .content h2 {
+  font-size: 1.5em;
+  clear: none;
+}
+.case-study .content ul {
+  padding-left: 1.2em;
+}
+.case-study .content ul li {
+  list-style-position: outside;
+}
+.case-study .content .tech {
+  background-color: #4180c7;
+  padding: 1em;
+  color: white;
+}
+.case-study .content .tech h1 {
+  color: white;
+}
+.case-study .content .tech ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+.case-study .content .tech ul li {
+  display: inline;
+  font-size: 1.3125em;
+  margin-right: 1em;
+}
+@media (min-width: 768px) {
+  .case-study .content {
+    max-width: 90%;
+  }
+}
+@media (min-width: 1024px), (min-width: 768px) and (orientation: landscape) {
+  .case-study .content {
+    width: 37.5em;
+  }
+}
+@media (min-width: 1138px) {
+  .case-study {
+    width: none;
+  }
+}
+
+.what-we-do section {
+  margin-bottom: 2em;
+}
+.what-we-do section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.what-we-do h2 {
+  margin-bottom: 1em;
+}
+
+.our-process .intro {
+  width: 87.30159%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 6.34921%;
+  clear: none;
+}
+@media (min-width: 700px) {
+  .our-process .intro {
+    width: 55.55556%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 6.34921%;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  .our-process .intro {
+    width: 49.20635%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 6.34921%;
+    clear: none;
+  }
+}
+.our-process blockquote {
+  display: none;
+  width: 87.30159%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 6.34921%;
+  clear: none;
+}
+@media (min-width: 700px) {
+  .our-process blockquote {
+    display: block;
+    width: 30.15873%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  .our-process blockquote {
+    display: block;
+    width: 36.50794%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+.fun {
+  text-align: center;
+}
+.fun img {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 700px) {
+  .fun img:nth-child(even) {
+    width: 49.20635%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+  .fun img:nth-child(odd) {
+    width: 49.20635%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+.our-services section {
+  width: 87.30159%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 6.34921%;
+  clear: none;
+  clear: both;
+}
+@media (min-width: 700px) {
+  .our-services section:nth-of-type(1) {
+    width: 30.15873%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 6.34921%;
+    clear: none;
+  }
+  .our-services section:nth-of-type(2) {
+    width: 30.15873%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 38.09524%;
+    clear: none;
+  }
+  .our-services section:nth-of-type(3) {
+    width: 30.15873%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .our-services section:nth-of-type(4) {
+    width: 30.15873%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 19.04762%;
+    clear: none;
+    clear: both;
+  }
+  .our-services section:nth-of-type(5) {
+    width: 30.15873%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 57.14286%;
+    clear: none;
+  }
+}
+
+.team main {
+  width: 90%;
+}
+.team main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 1024px) {
+  .team main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  br.r {
+    display: block;
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.25em;
+}
+
+p.intro {
+  text-align: center;
+  font-size: 1.3125em;
+  font-family: "Merriweather", Georgia, serif;
+  margin-bottom: 4em;
+}
+@media (min-width: 640px) and (max-width: 1023px), (min-width: 320px) and (orientation: landscape) {
+  p.intro {
+    padding: 0 2em;
+  }
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 1em;
+}
+@media (min-width: 0) and (max-width: 639px) {
+  .team-member:nth-of-type(2n+1) {
+    width: 48.78049%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    clear: both;
+  }
+  .team-member:nth-of-type(2n+2) {
+    width: 48.78049%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px), (min-width: 320px) and (orientation: landscape) {
+  .team-member:nth-of-type(4n+1) {
+    width: 23.17073%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    clear: both;
+  }
+  .team-member:nth-of-type(4n+2) {
+    width: 23.17073%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.60976%;
+    clear: none;
+  }
+  .team-member:nth-of-type(4n+3) {
+    width: 23.17073%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.21951%;
+    clear: none;
+  }
+  .team-member:nth-of-type(4n+4) {
+    width: 23.17073%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 1024px) {
+  .team-member:nth-of-type(6n+1) {
+    width: 14.63415%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    clear: both;
+  }
+  .team-member:nth-of-type(6n+2) {
+    width: 14.63415%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 17.07317%;
+    clear: none;
+  }
+  .team-member:nth-of-type(6n+3) {
+    width: 14.63415%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.14634%;
+    clear: none;
+  }
+  .team-member:nth-of-type(6n+4) {
+    width: 14.63415%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.21951%;
+    clear: none;
+  }
+  .team-member:nth-of-type(6n+5) {
+    width: 14.63415%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 68.29268%;
+    clear: none;
+  }
+  .team-member:nth-of-type(6n+6) {
+    width: 14.63415%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+.team-member .avatar {
+  background: white url('/img/patterns/noise-multiply.png') repeat;
+  box-shadow: inset 0 0 0 2px #f1f1f1, inset 0 0 0 4px white;
+}
+.team-member .avatar a {
+  transition: box-shadow 0.25s linear;
+}
+.team-member .avatar a:hover {
+  box-shadow: 0 0 0 6px #ecdf13, inset 0 0 0 4px white;
+}
+.team-member .name {
+  font-size: 1.125em;
+  margin-bottom: .1em;
+}
+@media (min-width: 640px) and (max-width: 1023px), (min-width: 320px) and (orientation: landscape) {
+  .team-member .name {
+    font-size: 1.125em;
+  }
+}
+.team-member .job-title {
+  font-size: 0.875em;
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 1.4;
+}
+
+.profile section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.profile .no-hero {
+  text-align: center;
+}
+.profile .no-hero:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.profile .no-hero .blurb {
+  font-size: 1.5em;
+  color: #35aa4e;
+}
+@media (min-width: 480px) {
+  .profile .no-hero {
+    width: 74.60317%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .profile .no-hero h1, .profile .no-hero .blurb {
+    text-align: left;
+  }
+}
+.profile .hero {
+  position: relative;
+  text-align: center;
+  clear: both;
+  margin-bottom: 1em;
+}
+.profile .hero .name {
+  color: #414141;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 80%;
+}
+.profile .hero .name h1 {
+  margin-bottom: 0.25em;
+}
+.profile .hero .name .blurb {
+  font-size: 1.3125em;
+  font-family: "Merriweather", Georgia, serif;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .profile .hero .name {
+    width: auto;
+  }
+}
+.profile .details {
+  font-family: "Merriweather", Georgia, serif;
+  clear: both;
+  padding: 0 5%;
+}
+.profile .details .avatar {
+  background: #35aa4e;
+  box-shadow: inset 0 0 0 2px #35aa4e, inset 0 0 0 4px white;
+  width: 49.20635%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 25.39683%;
+  clear: none;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  clear: both;
+}
+.profile .details .avatar a {
+  transition: box-shadow 0.25s linear;
+}
+.profile .details .avatar a:hover {
+  box-shadow: 0 0 0 6px #ecdf13, inset 0 0 0 4px white;
+}
+@media (min-width: 480px) {
+  .profile .details .avatar {
+    width: 17.46032%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    clear: none;
+  }
+}
+@media (min-width: 768px) {
+  .profile .details .avatar {
+    width: 17.46032%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 6.34921%;
+    clear: none;
+  }
+}
+.profile .details .bio {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  clear: both;
+  font-size: 0.875em;
+}
+@media (min-width: 480px) {
+  .profile .details .bio {
+    width: 80.95238%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: none;
+  }
+}
+@media (min-width: 768px) {
+  .profile .details .bio {
+    width: 55.55556%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.39683%;
+    clear: none;
+    font-size: 1em;
+  }
+}
+.profile .details .social {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  clear: both;
+  margin-bottom: 1em;
+  font-family: '4k-icons';
+}
+.profile .details .social ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  text-align: center;
+}
+.profile .details .social ul li {
+  display: inline;
+  font-size: 3em;
+}
+@media (min-width: 480px) {
+  .profile .details .social ul li {
+    display: list-item;
+    margin-bottom: 0.25em;
+  }
+}
+@media (min-width: 768px) {
+  .profile .details .social ul li {
+    font-size: 3.75em;
+  }
+}
+.profile .details .social ul li a:hover {
+  text-decoration: none;
+}
+@media (min-width: 480px) {
+  .profile .details .social ul {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 480px) {
+  .profile .details .social {
+    width: 17.46032%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    margin-top: 9em;
+    clear: none;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .profile .details .social {
+    width: 11.11111%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 82.53968%;
+    clear: none;
+    margin-top: 0;
+  }
+}
+@media (min-width: 480px) {
+  .profile .details {
+    padding: 0;
+  }
+}
+
+@font-face {
+  font-family: '4k-icons';
+  src: url('/fonts/4k-icons/4k-icons.eot');
+  src: url('/fonts/4k-icons/4k-icons.eot?#iefix') format("embedded-opentype"), url('/fonts/4k-icons/4k-icons.ttf') format("truetype"), url('/fonts/4k-icons/4k-icons.woff') format("woff"), url('/fonts/4k-icons/4k-icons.svg#4k-icons') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: '4k-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flickr:before {
+  content: "\e600";
+}
+
+.icon-twitter:before {
+  content: "\e601";
+}
+
+.icon-facebook:before {
+  content: "\e602";
+}
+
+.icon-googleplus:before {
+  content: "\e603";
+}
+
+.icon-pinterest:before {
+  content: "\e604";
+}
+
+.icon-linkedin:before {
+  content: "\e605";
+}
+
+.icon-dribbble:before {
+  content: "\e606";
+}
+
+.icon-instagram:before {
+  content: "\e607";
+}
+
+.icon-rdio:before {
+  content: "\e608";
+}
+
+.icon-spotify:before {
+  content: "\e609";
+}
+
+.icon-github:before {
+  content: "\e60a";
+}
+
+.icon-drupal:before {
+  content: "\e60b";
+}
+
+[data-development-grid="show"] {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(210, 105, 30, 0.5)), color-stop(4.7619%, rgba(210, 105, 30, 0.5)), color-stop(4.7619%, rgba(210, 105, 30, 0.25)), color-stop(6.34921%, rgba(210, 105, 30, 0.25)), color-stop(6.34921%, rgba(210, 105, 30, 0.5)), color-stop(11.11111%, rgba(210, 105, 30, 0.5)), color-stop(11.11111%, rgba(210, 105, 30, 0.25)), color-stop(12.69841%, rgba(210, 105, 30, 0.25)), color-stop(12.69841%, rgba(210, 105, 30, 0.5)), color-stop(17.46032%, rgba(210, 105, 30, 0.5)), color-stop(17.46032%, rgba(210, 105, 30, 0.25)), color-stop(19.04762%, rgba(210, 105, 30, 0.25)), color-stop(19.04762%, rgba(210, 105, 30, 0.5)), color-stop(23.80952%, rgba(210, 105, 30, 0.5)), color-stop(23.80952%, rgba(210, 105, 30, 0.25)), color-stop(25.39683%, rgba(210, 105, 30, 0.25)), color-stop(25.39683%, rgba(210, 105, 30, 0.5)), color-stop(30.15873%, rgba(210, 105, 30, 0.5)), color-stop(30.15873%, rgba(210, 105, 30, 0.25)), color-stop(31.74603%, rgba(210, 105, 30, 0.25)), color-stop(31.74603%, rgba(210, 105, 30, 0.5)), color-stop(36.50794%, rgba(210, 105, 30, 0.5)), color-stop(36.50794%, rgba(210, 105, 30, 0.25)), color-stop(38.09524%, rgba(210, 105, 30, 0.25)), color-stop(38.09524%, rgba(210, 105, 30, 0.5)), color-stop(42.85714%, rgba(210, 105, 30, 0.5)), color-stop(42.85714%, rgba(210, 105, 30, 0.25)), color-stop(44.44444%, rgba(210, 105, 30, 0.25)), color-stop(44.44444%, rgba(210, 105, 30, 0.5)), color-stop(49.20635%, rgba(210, 105, 30, 0.5)), color-stop(49.20635%, rgba(210, 105, 30, 0.25)), color-stop(50.79365%, rgba(210, 105, 30, 0.25)), color-stop(50.79365%, rgba(210, 105, 30, 0.5)), color-stop(55.55556%, rgba(210, 105, 30, 0.5)), color-stop(55.55556%, rgba(210, 105, 30, 0.25)), color-stop(57.14286%, rgba(210, 105, 30, 0.25)), color-stop(57.14286%, rgba(210, 105, 30, 0.5)), color-stop(61.90476%, rgba(210, 105, 30, 0.5)), color-stop(61.90476%, rgba(210, 105, 30, 0.25)), color-stop(63.49206%, rgba(210, 105, 30, 0.25)), color-stop(63.49206%, rgba(210, 105, 30, 0.5)), color-stop(68.25397%, rgba(210, 105, 30, 0.5)), color-stop(68.25397%, rgba(210, 105, 30, 0.25)), color-stop(69.84127%, rgba(210, 105, 30, 0.25)), color-stop(69.84127%, rgba(210, 105, 30, 0.5)), color-stop(74.60317%, rgba(210, 105, 30, 0.5)), color-stop(74.60317%, rgba(210, 105, 30, 0.25)), color-stop(76.19048%, rgba(210, 105, 30, 0.25)), color-stop(76.19048%, rgba(210, 105, 30, 0.5)), color-stop(80.95238%, rgba(210, 105, 30, 0.5)), color-stop(80.95238%, rgba(210, 105, 30, 0.25)), color-stop(82.53968%, rgba(210, 105, 30, 0.25)), color-stop(82.53968%, rgba(210, 105, 30, 0.5)), color-stop(87.30159%, rgba(210, 105, 30, 0.5)), color-stop(87.30159%, rgba(210, 105, 30, 0.25)), color-stop(88.88889%, rgba(210, 105, 30, 0.25)), color-stop(88.88889%, rgba(210, 105, 30, 0.5)), color-stop(93.65079%, rgba(210, 105, 30, 0.5)), color-stop(93.65079%, rgba(210, 105, 30, 0.25)), color-stop(95.2381%, rgba(210, 105, 30, 0.25)), color-stop(95.2381%, rgba(210, 105, 30, 0.5)), color-stop(100%, rgba(210, 105, 30, 0.5)));
+  background-image: -webkit-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 4.7619%, rgba(210, 105, 30, 0.25) 4.7619%, rgba(210, 105, 30, 0.25) 6.34921%, rgba(210, 105, 30, 0.5) 6.34921%, rgba(210, 105, 30, 0.5) 11.11111%, rgba(210, 105, 30, 0.25) 11.11111%, rgba(210, 105, 30, 0.25) 12.69841%, rgba(210, 105, 30, 0.5) 12.69841%, rgba(210, 105, 30, 0.5) 17.46032%, rgba(210, 105, 30, 0.25) 17.46032%, rgba(210, 105, 30, 0.25) 19.04762%, rgba(210, 105, 30, 0.5) 19.04762%, rgba(210, 105, 30, 0.5) 23.80952%, rgba(210, 105, 30, 0.25) 23.80952%, rgba(210, 105, 30, 0.25) 25.39683%, rgba(210, 105, 30, 0.5) 25.39683%, rgba(210, 105, 30, 0.5) 30.15873%, rgba(210, 105, 30, 0.25) 30.15873%, rgba(210, 105, 30, 0.25) 31.74603%, rgba(210, 105, 30, 0.5) 31.74603%, rgba(210, 105, 30, 0.5) 36.50794%, rgba(210, 105, 30, 0.25) 36.50794%, rgba(210, 105, 30, 0.25) 38.09524%, rgba(210, 105, 30, 0.5) 38.09524%, rgba(210, 105, 30, 0.5) 42.85714%, rgba(210, 105, 30, 0.25) 42.85714%, rgba(210, 105, 30, 0.25) 44.44444%, rgba(210, 105, 30, 0.5) 44.44444%, rgba(210, 105, 30, 0.5) 49.20635%, rgba(210, 105, 30, 0.25) 49.20635%, rgba(210, 105, 30, 0.25) 50.79365%, rgba(210, 105, 30, 0.5) 50.79365%, rgba(210, 105, 30, 0.5) 55.55556%, rgba(210, 105, 30, 0.25) 55.55556%, rgba(210, 105, 30, 0.25) 57.14286%, rgba(210, 105, 30, 0.5) 57.14286%, rgba(210, 105, 30, 0.5) 61.90476%, rgba(210, 105, 30, 0.25) 61.90476%, rgba(210, 105, 30, 0.25) 63.49206%, rgba(210, 105, 30, 0.5) 63.49206%, rgba(210, 105, 30, 0.5) 68.25397%, rgba(210, 105, 30, 0.25) 68.25397%, rgba(210, 105, 30, 0.25) 69.84127%, rgba(210, 105, 30, 0.5) 69.84127%, rgba(210, 105, 30, 0.5) 74.60317%, rgba(210, 105, 30, 0.25) 74.60317%, rgba(210, 105, 30, 0.25) 76.19048%, rgba(210, 105, 30, 0.5) 76.19048%, rgba(210, 105, 30, 0.5) 80.95238%, rgba(210, 105, 30, 0.25) 80.95238%, rgba(210, 105, 30, 0.25) 82.53968%, rgba(210, 105, 30, 0.5) 82.53968%, rgba(210, 105, 30, 0.5) 87.30159%, rgba(210, 105, 30, 0.25) 87.30159%, rgba(210, 105, 30, 0.25) 88.88889%, rgba(210, 105, 30, 0.5) 88.88889%, rgba(210, 105, 30, 0.5) 93.65079%, rgba(210, 105, 30, 0.25) 93.65079%, rgba(210, 105, 30, 0.25) 95.2381%, rgba(210, 105, 30, 0.5) 95.2381%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: -moz-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 4.7619%, rgba(210, 105, 30, 0.25) 4.7619%, rgba(210, 105, 30, 0.25) 6.34921%, rgba(210, 105, 30, 0.5) 6.34921%, rgba(210, 105, 30, 0.5) 11.11111%, rgba(210, 105, 30, 0.25) 11.11111%, rgba(210, 105, 30, 0.25) 12.69841%, rgba(210, 105, 30, 0.5) 12.69841%, rgba(210, 105, 30, 0.5) 17.46032%, rgba(210, 105, 30, 0.25) 17.46032%, rgba(210, 105, 30, 0.25) 19.04762%, rgba(210, 105, 30, 0.5) 19.04762%, rgba(210, 105, 30, 0.5) 23.80952%, rgba(210, 105, 30, 0.25) 23.80952%, rgba(210, 105, 30, 0.25) 25.39683%, rgba(210, 105, 30, 0.5) 25.39683%, rgba(210, 105, 30, 0.5) 30.15873%, rgba(210, 105, 30, 0.25) 30.15873%, rgba(210, 105, 30, 0.25) 31.74603%, rgba(210, 105, 30, 0.5) 31.74603%, rgba(210, 105, 30, 0.5) 36.50794%, rgba(210, 105, 30, 0.25) 36.50794%, rgba(210, 105, 30, 0.25) 38.09524%, rgba(210, 105, 30, 0.5) 38.09524%, rgba(210, 105, 30, 0.5) 42.85714%, rgba(210, 105, 30, 0.25) 42.85714%, rgba(210, 105, 30, 0.25) 44.44444%, rgba(210, 105, 30, 0.5) 44.44444%, rgba(210, 105, 30, 0.5) 49.20635%, rgba(210, 105, 30, 0.25) 49.20635%, rgba(210, 105, 30, 0.25) 50.79365%, rgba(210, 105, 30, 0.5) 50.79365%, rgba(210, 105, 30, 0.5) 55.55556%, rgba(210, 105, 30, 0.25) 55.55556%, rgba(210, 105, 30, 0.25) 57.14286%, rgba(210, 105, 30, 0.5) 57.14286%, rgba(210, 105, 30, 0.5) 61.90476%, rgba(210, 105, 30, 0.25) 61.90476%, rgba(210, 105, 30, 0.25) 63.49206%, rgba(210, 105, 30, 0.5) 63.49206%, rgba(210, 105, 30, 0.5) 68.25397%, rgba(210, 105, 30, 0.25) 68.25397%, rgba(210, 105, 30, 0.25) 69.84127%, rgba(210, 105, 30, 0.5) 69.84127%, rgba(210, 105, 30, 0.5) 74.60317%, rgba(210, 105, 30, 0.25) 74.60317%, rgba(210, 105, 30, 0.25) 76.19048%, rgba(210, 105, 30, 0.5) 76.19048%, rgba(210, 105, 30, 0.5) 80.95238%, rgba(210, 105, 30, 0.25) 80.95238%, rgba(210, 105, 30, 0.25) 82.53968%, rgba(210, 105, 30, 0.5) 82.53968%, rgba(210, 105, 30, 0.5) 87.30159%, rgba(210, 105, 30, 0.25) 87.30159%, rgba(210, 105, 30, 0.25) 88.88889%, rgba(210, 105, 30, 0.5) 88.88889%, rgba(210, 105, 30, 0.5) 93.65079%, rgba(210, 105, 30, 0.25) 93.65079%, rgba(210, 105, 30, 0.25) 95.2381%, rgba(210, 105, 30, 0.5) 95.2381%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 4.7619%, rgba(210, 105, 30, 0.25) 4.7619%, rgba(210, 105, 30, 0.25) 6.34921%, rgba(210, 105, 30, 0.5) 6.34921%, rgba(210, 105, 30, 0.5) 11.11111%, rgba(210, 105, 30, 0.25) 11.11111%, rgba(210, 105, 30, 0.25) 12.69841%, rgba(210, 105, 30, 0.5) 12.69841%, rgba(210, 105, 30, 0.5) 17.46032%, rgba(210, 105, 30, 0.25) 17.46032%, rgba(210, 105, 30, 0.25) 19.04762%, rgba(210, 105, 30, 0.5) 19.04762%, rgba(210, 105, 30, 0.5) 23.80952%, rgba(210, 105, 30, 0.25) 23.80952%, rgba(210, 105, 30, 0.25) 25.39683%, rgba(210, 105, 30, 0.5) 25.39683%, rgba(210, 105, 30, 0.5) 30.15873%, rgba(210, 105, 30, 0.25) 30.15873%, rgba(210, 105, 30, 0.25) 31.74603%, rgba(210, 105, 30, 0.5) 31.74603%, rgba(210, 105, 30, 0.5) 36.50794%, rgba(210, 105, 30, 0.25) 36.50794%, rgba(210, 105, 30, 0.25) 38.09524%, rgba(210, 105, 30, 0.5) 38.09524%, rgba(210, 105, 30, 0.5) 42.85714%, rgba(210, 105, 30, 0.25) 42.85714%, rgba(210, 105, 30, 0.25) 44.44444%, rgba(210, 105, 30, 0.5) 44.44444%, rgba(210, 105, 30, 0.5) 49.20635%, rgba(210, 105, 30, 0.25) 49.20635%, rgba(210, 105, 30, 0.25) 50.79365%, rgba(210, 105, 30, 0.5) 50.79365%, rgba(210, 105, 30, 0.5) 55.55556%, rgba(210, 105, 30, 0.25) 55.55556%, rgba(210, 105, 30, 0.25) 57.14286%, rgba(210, 105, 30, 0.5) 57.14286%, rgba(210, 105, 30, 0.5) 61.90476%, rgba(210, 105, 30, 0.25) 61.90476%, rgba(210, 105, 30, 0.25) 63.49206%, rgba(210, 105, 30, 0.5) 63.49206%, rgba(210, 105, 30, 0.5) 68.25397%, rgba(210, 105, 30, 0.25) 68.25397%, rgba(210, 105, 30, 0.25) 69.84127%, rgba(210, 105, 30, 0.5) 69.84127%, rgba(210, 105, 30, 0.5) 74.60317%, rgba(210, 105, 30, 0.25) 74.60317%, rgba(210, 105, 30, 0.25) 76.19048%, rgba(210, 105, 30, 0.5) 76.19048%, rgba(210, 105, 30, 0.5) 80.95238%, rgba(210, 105, 30, 0.25) 80.95238%, rgba(210, 105, 30, 0.25) 82.53968%, rgba(210, 105, 30, 0.5) 82.53968%, rgba(210, 105, 30, 0.5) 87.30159%, rgba(210, 105, 30, 0.25) 87.30159%, rgba(210, 105, 30, 0.25) 88.88889%, rgba(210, 105, 30, 0.5) 88.88889%, rgba(210, 105, 30, 0.5) 93.65079%, rgba(210, 105, 30, 0.25) 93.65079%, rgba(210, 105, 30, 0.25) 95.2381%, rgba(210, 105, 30, 0.5) 95.2381%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: -ms-linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 4.7619%, rgba(210, 105, 30, 0.25) 4.7619%, rgba(210, 105, 30, 0.25) 6.34921%, rgba(210, 105, 30, 0.5) 6.34921%, rgba(210, 105, 30, 0.5) 11.11111%, rgba(210, 105, 30, 0.25) 11.11111%, rgba(210, 105, 30, 0.25) 12.69841%, rgba(210, 105, 30, 0.5) 12.69841%, rgba(210, 105, 30, 0.5) 17.46032%, rgba(210, 105, 30, 0.25) 17.46032%, rgba(210, 105, 30, 0.25) 19.04762%, rgba(210, 105, 30, 0.5) 19.04762%, rgba(210, 105, 30, 0.5) 23.80952%, rgba(210, 105, 30, 0.25) 23.80952%, rgba(210, 105, 30, 0.25) 25.39683%, rgba(210, 105, 30, 0.5) 25.39683%, rgba(210, 105, 30, 0.5) 30.15873%, rgba(210, 105, 30, 0.25) 30.15873%, rgba(210, 105, 30, 0.25) 31.74603%, rgba(210, 105, 30, 0.5) 31.74603%, rgba(210, 105, 30, 0.5) 36.50794%, rgba(210, 105, 30, 0.25) 36.50794%, rgba(210, 105, 30, 0.25) 38.09524%, rgba(210, 105, 30, 0.5) 38.09524%, rgba(210, 105, 30, 0.5) 42.85714%, rgba(210, 105, 30, 0.25) 42.85714%, rgba(210, 105, 30, 0.25) 44.44444%, rgba(210, 105, 30, 0.5) 44.44444%, rgba(210, 105, 30, 0.5) 49.20635%, rgba(210, 105, 30, 0.25) 49.20635%, rgba(210, 105, 30, 0.25) 50.79365%, rgba(210, 105, 30, 0.5) 50.79365%, rgba(210, 105, 30, 0.5) 55.55556%, rgba(210, 105, 30, 0.25) 55.55556%, rgba(210, 105, 30, 0.25) 57.14286%, rgba(210, 105, 30, 0.5) 57.14286%, rgba(210, 105, 30, 0.5) 61.90476%, rgba(210, 105, 30, 0.25) 61.90476%, rgba(210, 105, 30, 0.25) 63.49206%, rgba(210, 105, 30, 0.5) 63.49206%, rgba(210, 105, 30, 0.5) 68.25397%, rgba(210, 105, 30, 0.25) 68.25397%, rgba(210, 105, 30, 0.25) 69.84127%, rgba(210, 105, 30, 0.5) 69.84127%, rgba(210, 105, 30, 0.5) 74.60317%, rgba(210, 105, 30, 0.25) 74.60317%, rgba(210, 105, 30, 0.25) 76.19048%, rgba(210, 105, 30, 0.5) 76.19048%, rgba(210, 105, 30, 0.5) 80.95238%, rgba(210, 105, 30, 0.25) 80.95238%, rgba(210, 105, 30, 0.25) 82.53968%, rgba(210, 105, 30, 0.5) 82.53968%, rgba(210, 105, 30, 0.5) 87.30159%, rgba(210, 105, 30, 0.25) 87.30159%, rgba(210, 105, 30, 0.25) 88.88889%, rgba(210, 105, 30, 0.5) 88.88889%, rgba(210, 105, 30, 0.5) 93.65079%, rgba(210, 105, 30, 0.25) 93.65079%, rgba(210, 105, 30, 0.25) 95.2381%, rgba(210, 105, 30, 0.5) 95.2381%, rgba(210, 105, 30, 0.5) 100%);
+  background-image: linear-gradient(left, rgba(210, 105, 30, 0.5), rgba(210, 105, 30, 0.5) 4.7619%, rgba(210, 105, 30, 0.25) 4.7619%, rgba(210, 105, 30, 0.25) 6.34921%, rgba(210, 105, 30, 0.5) 6.34921%, rgba(210, 105, 30, 0.5) 11.11111%, rgba(210, 105, 30, 0.25) 11.11111%, rgba(210, 105, 30, 0.25) 12.69841%, rgba(210, 105, 30, 0.5) 12.69841%, rgba(210, 105, 30, 0.5) 17.46032%, rgba(210, 105, 30, 0.25) 17.46032%, rgba(210, 105, 30, 0.25) 19.04762%, rgba(210, 105, 30, 0.5) 19.04762%, rgba(210, 105, 30, 0.5) 23.80952%, rgba(210, 105, 30, 0.25) 23.80952%, rgba(210, 105, 30, 0.25) 25.39683%, rgba(210, 105, 30, 0.5) 25.39683%, rgba(210, 105, 30, 0.5) 30.15873%, rgba(210, 105, 30, 0.25) 30.15873%, rgba(210, 105, 30, 0.25) 31.74603%, rgba(210, 105, 30, 0.5) 31.74603%, rgba(210, 105, 30, 0.5) 36.50794%, rgba(210, 105, 30, 0.25) 36.50794%, rgba(210, 105, 30, 0.25) 38.09524%, rgba(210, 105, 30, 0.5) 38.09524%, rgba(210, 105, 30, 0.5) 42.85714%, rgba(210, 105, 30, 0.25) 42.85714%, rgba(210, 105, 30, 0.25) 44.44444%, rgba(210, 105, 30, 0.5) 44.44444%, rgba(210, 105, 30, 0.5) 49.20635%, rgba(210, 105, 30, 0.25) 49.20635%, rgba(210, 105, 30, 0.25) 50.79365%, rgba(210, 105, 30, 0.5) 50.79365%, rgba(210, 105, 30, 0.5) 55.55556%, rgba(210, 105, 30, 0.25) 55.55556%, rgba(210, 105, 30, 0.25) 57.14286%, rgba(210, 105, 30, 0.5) 57.14286%, rgba(210, 105, 30, 0.5) 61.90476%, rgba(210, 105, 30, 0.25) 61.90476%, rgba(210, 105, 30, 0.25) 63.49206%, rgba(210, 105, 30, 0.5) 63.49206%, rgba(210, 105, 30, 0.5) 68.25397%, rgba(210, 105, 30, 0.25) 68.25397%, rgba(210, 105, 30, 0.25) 69.84127%, rgba(210, 105, 30, 0.5) 69.84127%, rgba(210, 105, 30, 0.5) 74.60317%, rgba(210, 105, 30, 0.25) 74.60317%, rgba(210, 105, 30, 0.25) 76.19048%, rgba(210, 105, 30, 0.5) 76.19048%, rgba(210, 105, 30, 0.5) 80.95238%, rgba(210, 105, 30, 0.25) 80.95238%, rgba(210, 105, 30, 0.25) 82.53968%, rgba(210, 105, 30, 0.5) 82.53968%, rgba(210, 105, 30, 0.5) 87.30159%, rgba(210, 105, 30, 0.25) 87.30159%, rgba(210, 105, 30, 0.25) 88.88889%, rgba(210, 105, 30, 0.5) 88.88889%, rgba(210, 105, 30, 0.5) 93.65079%, rgba(210, 105, 30, 0.25) 93.65079%, rgba(210, 105, 30, 0.25) 95.2381%, rgba(210, 105, 30, 0.5) 95.2381%, rgba(210, 105, 30, 0.5) 100%);
+}
