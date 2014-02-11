@@ -1,8 +1,8 @@
 # Careers at Four Kitchens
 
-### Prospect questions
+## Prospect questions
 
-#### Backend
+### Backend
 
 **General backend**
 
@@ -21,11 +21,17 @@
 4. What are Drupal hooks?
 5. How does Drupal use the .htaccess file to support clean urls?
 
-#### Frontend
+### Frontend
 
-1. Why is asset minification important?
+1. How would you optimize a websites assets/resources in an effort to improve frontend performance?
+ * Examples: File concatenation, file minification, CDN hosting, caching, etc.
 
-### Code exercises
+### Fun questions
+
+* What's the coolest thing you've ever coded, what are you most proud of?
+* What's the last thing you learned (language/tool/solution) that made you excited?
+
+## Code exercises
 
 1. In whichever programming language you are comfortable with, create a routine that
    creates a copy of [this file](./exercises/base64/index.html) where image sources
