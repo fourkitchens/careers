@@ -58,7 +58,6 @@ In many interviews the conversation naturally evolves based on the answers and c
 8. What are the different types of HTTP requests.
 9. How is a session represented in the browser?
 10. Describe how Apache and PHP work together.
-11. How is a session represented in the browser?
 
 **Drupal backend**
 
@@ -83,6 +82,7 @@ In many interviews the conversation naturally evolves based on the answers and c
 ### Fun questions
 
 * What is on your must-read list? Blogs, newsletters, books, etc.
+* Do you have a dot-files repo? How do you manage your environment configuration.
 * What is your favorite programming language and which ones do you hate? Why?
 * What's the last thing you learned (language/tool/solution) that made you excited?
 
